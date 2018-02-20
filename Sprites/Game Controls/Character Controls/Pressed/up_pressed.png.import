@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/up_pressed.png-4910c913b6178b9511e021ae51b8dc22.stex"
+
+[deps]
+
+source_file="res://Sprites/Game Controls/Character Controls/Pressed/up_pressed.png"
+source_md5="c9fc29747b81b09943c8ea8848ae0f16"
+
+dest_files=[ "res://.import/up_pressed.png-4910c913b6178b9511e021ae51b8dc22.stex" ]
+dest_md5="78bc0a127e7df56e6aa7ae1f8d30691c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

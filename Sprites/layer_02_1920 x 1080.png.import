@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/layer_02_1920 x 1080.png-41e3c40811cc2f44067f4c9cdb2ed066.stex"
+
+[deps]
+
+source_file="res://Sprites/layer_02_1920 x 1080.png"
+source_md5="6f5c8ce34f5c0f7e2952a5b0a1f17cd8"
+
+dest_files=[ "res://.import/layer_02_1920 x 1080.png-41e3c40811cc2f44067f4c9cdb2ed066.stex" ]
+dest_md5="c1247cc6da434a7418f89fe0779c6897"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
