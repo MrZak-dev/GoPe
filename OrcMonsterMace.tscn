@@ -28,7 +28,7 @@ extents = Vector2( 45, 35 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="OrcMonsterMace" type="KinematicBody2D" index="0"]
+[node name="OrcMonsterMace" type="KinematicBody2D"]
 
 position = Vector2( 128, 96 )
 input_pickable = false
@@ -55,7 +55,6 @@ audio_bus_name = "Master"
 scale = Vector2( 0.06, 0.06 )
 frames = SubResource( 1 )
 animation = "walk"
-frame = 6
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 

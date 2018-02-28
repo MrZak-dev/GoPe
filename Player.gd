@@ -8,8 +8,6 @@ const JUMP_SPEED = 600
 var motion = Vector2()
 
 
-
-
 func _physics_process(delta):
 	#Movements physiques
 	var friction = false

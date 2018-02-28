@@ -14,8 +14,7 @@ func _physics_process(delta):
 
 
 func player_touched(body):
-	var bodyName = body.get_class()
-	if bodyName == "KinematicBody2D":
+	if body.name == "Player":
 		body.position = global.check_point
 		global.player_lives -= 1
 	pass

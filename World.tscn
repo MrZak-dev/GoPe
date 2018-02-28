@@ -65,7 +65,7 @@ custom_solver_bias = 0.0
 radius = 14.0
 height = 28.0
 
-[node name="World" type="Node"]
+[node name="World" type="Node" index="0"]
 
 _sections_unfolded = [ "Pause" ]
 
@@ -151,6 +151,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Player" type="KinematicBody2D" parent="." index="2"]
 
+editor/display_folded = true
 position = Vector2( 351.996, 247.342 )
 input_pickable = false
 collision_layer = 1
