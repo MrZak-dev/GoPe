@@ -23,9 +23,8 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 22, 24 )
 
-[node name="CheckPoint" type="Area2D"]
+[node name="CheckPoint" type="Area2D" index="0"]
 
-position = Vector2( 640, 320 )
 z_index = -1
 input_pickable = false
 gravity_vec = Vector2( 0, 0 )
@@ -36,6 +35,9 @@ audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pickable", "Z Index" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="AnimatedSprite" parent="." index="0"]
 

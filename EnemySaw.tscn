@@ -13,9 +13,8 @@ radius = 32.0
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="EnemySaw" type="KinematicBody2D"]
+[node name="EnemySaw" type="KinematicBody2D" index="0"]
 
-position = Vector2( 616, 264 )
 scale = Vector2( 1.25, 1.25 )
 z_index = -1
 input_pickable = true
@@ -24,6 +23,9 @@ collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="." index="0"]
 

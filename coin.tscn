@@ -37,9 +37,8 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Coin" type="Node2D"]
+[node name="Coin" type="Node2D" index="0"]
 
-position = Vector2( 250, 70 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -61,7 +60,7 @@ position = Vector2( 4.76837e-07, -3.57628e-07 )
 scale = Vector2( 0.15625, 0.15625 )
 frames = SubResource( 1 )
 animation = "Turnning"
-frame = 4
+frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coin_area" index="1"]
