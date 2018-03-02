@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Screenshot_20180302_153749.png-9309d73149d488d6fca1fd3e592e3276.stex"
+
+[deps]
+
+source_file="res://Sprites/Games ScreenShots/Screenshot_20180302_153749.png"
+source_md5="902cff27ee77020f41fbfe633c3a1a9c"
+
+dest_files=[ "res://.import/Screenshot_20180302_153749.png-9309d73149d488d6fca1fd3e592e3276.stex" ]
+dest_md5="a8298a33ca4acc15f8e9d990079869dd"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
