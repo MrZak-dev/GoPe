@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Sprites/Backgrounds/world2_bg.png" type="Texture" id=1]
 [ext_resource path="res://Tiles/TailesWithGras.tres" type="TileSet" id=2]
@@ -10,19 +10,11 @@
 [ext_resource path="res://Scenes/EnemySaw.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/OrcMonsterMace.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Player Controls.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/OrcMonsterSword.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Player Controls.tscn" type="PackedScene" id=13]
 
-
-
-
-
-
-
-
-[node name="World2" type="Node"]
-
-editor/display_folded = true
+[node name="World2" type="Node" index="0"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
@@ -249,34 +241,34 @@ position = Vector2( 896, 288 )
 
 position = Vector2( 2048, 192 )
 
-[node name="OrcMonsterMace3" parent="Enemies" index="7" instance=ExtResource( 9 )]
-
-position = Vector2( 3520, 224 )
-
-[node name="Enemy" parent="Enemies" index="8" instance=ExtResource( 10 )]
+[node name="Enemy" parent="Enemies" index="7" instance=ExtResource( 10 )]
 
 position = Vector2( 1984, 96 )
+
+[node name="OrcMonsterMace3" parent="Enemies" index="8" instance=ExtResource( 11 )]
+
+position = Vector2( 3488, 224 )
 
 [node name="Check Points" type="Node2D" parent="." index="6"]
 
 editor/display_folded = true
 
-[node name="CheckPoint" parent="Check Points" index="0" instance=ExtResource( 11 )]
+[node name="CheckPoint" parent="Check Points" index="0" instance=ExtResource( 12 )]
 
 position = Vector2( 896, 288 )
 
-[node name="CheckPoint2" parent="Check Points" index="1" instance=ExtResource( 11 )]
+[node name="CheckPoint2" parent="Check Points" index="1" instance=ExtResource( 12 )]
 
 position = Vector2( 1600, 233 )
 
-[node name="CheckPoint3" parent="Check Points" index="2" instance=ExtResource( 11 )]
+[node name="CheckPoint3" parent="Check Points" index="2" instance=ExtResource( 12 )]
 
 position = Vector2( 2944, 296 )
 
-[node name="CheckPoint4" parent="Check Points" index="3" instance=ExtResource( 11 )]
+[node name="CheckPoint4" parent="Check Points" index="3" instance=ExtResource( 12 )]
 
 position = Vector2( 3872, 138 )
 
-[node name="Player Controls" parent="." index="7" instance=ExtResource( 12 )]
+[node name="Player Controls" parent="." index="7" instance=ExtResource( 13 )]
 
 
