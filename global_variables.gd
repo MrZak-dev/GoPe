@@ -6,7 +6,7 @@ extends Node
 
 var coins_picked 
 var player_lives
-var check_point = Vector2(65,270)
+var check_point = Vector2(150,150)
 
 var jump = false
 var right_button = false
