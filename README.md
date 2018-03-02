@@ -1,1 +1,1 @@
-** GOPE 1.0 , GoDot 2D Game **
+**GOPE 1.0 , GoDot 2D Game**
