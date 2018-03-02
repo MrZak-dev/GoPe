@@ -1,0 +1,268 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Sprites/Backgrounds/world2_bg.png" type="Texture" id=1]
+[ext_resource path="res://TailesWithGras.tres" type="TileSet" id=2]
+[ext_resource path="res://UnderEmptyTiles.tres" type="TileSet" id=3]
+[ext_resource path="res://DesertDirtTiles.tres" type="TileSet" id=4]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player Scores.tscn" type="PackedScene" id=6]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://EnemySaw.tscn" type="PackedScene" id=8]
+[ext_resource path="res://OrcMonsterMace.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://CheckPoint.tscn" type="PackedScene" id=11]
+
+[node name="World2" type="Node" index="0"]
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 1, 0.355556 )
+z_index = -5
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 4200, 1080 )
+_sections_unfolded = [ "Region" ]
+
+[node name="TileMaps" type="Node" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="TileMap1" type="TileMap" parent="TileMaps" index="0"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 103, 3, 0, 104, 7, 0, 105, 7, 0, 106, 7, 0, 107, 7, 0, 108, 12, 0, 65639, 3, 0, 65640, 7, 0, 65641, 7, 0, 65642, 7, 0, 65643, 7, 0, 65644, 12, 0, 131095, 0, 0, 131096, 1, 0, 131097, 1, 0, 131098, 2, 0, 131175, 3, 0, 131176, 7, 0, 131177, 7, 0, 131178, 7, 0, 131179, 7, 0, 131180, 12, 0, 196631, 8, 0, 196632, 9, 0, 196633, 10, 0, 196634, 11, 0, 196711, 3, 0, 196712, 7, 0, 196713, 7, 0, 196714, 7, 0, 196715, 7, 0, 196716, 12, 0, 262247, 4, 0, 262248, 5, 0, 262249, 5, 0, 262250, 5, 0, 262251, 5, 0, 262252, 6, 0, 327700, 0, 0, 327701, 2, 0, 327799, 0, 0, 327800, 1, 0, 327801, 1, 0, 327802, 2, 0, 393236, 3, 0, 393237, 12, 0, 393335, 8, 0, 393336, 9, 0, 393337, 10, 0, 393338, 11, 0, 458770, 0, 0, 458771, 2, 0, 458772, 3, 0, 458773, 12, 0, 458806, 0, 0, 458807, 1, 0, 458808, 1, 0, 458809, 1, 0, 458810, 1, 0, 458811, 1, 0, 458812, 1, 0, 458813, 1, 0, 458814, 1, 0, 458815, 1, 0, 458816, 1, 0, 458817, 1, 0, 458818, 1, 0, 458819, 1, 0, 458820, 1, 0, 458821, 2, 0, 458879, 0, 0, 458880, 2, 0, 524291, 0, 0, 524292, 1, 0, 524293, 1, 0, 524294, 2, 0, 524306, 3, 0, 524307, 12, 0, 524308, 3, 0, 524309, 12, 0, 524321, 0, 0, 524322, 2, 0, 524325, 0, 0, 524326, 2, 0, 524329, 0, 0, 524330, 2, 0, 524333, 0, 0, 524334, 2, 0, 524337, 0, 0, 524338, 2, 0, 524342, 3, 0, 524343, 7, 0, 524344, 7, 0, 524345, 7, 0, 524346, 7, 0, 524347, 7, 0, 524348, 7, 0, 524349, 7, 0, 524350, 7, 0, 524351, 7, 0, 524352, 7, 0, 524353, 7, 0, 524354, 7, 0, 524355, 7, 0, 524356, 7, 0, 524357, 12, 0, 524386, 0, 0, 524387, 1, 0, 524388, 1, 0, 524389, 1, 0, 524390, 1, 0, 524391, 1, 0, 524392, 1, 0, 524393, 1, 0, 524394, 1, 0, 524395, 1, 0, 524396, 1, 0, 524397, 1, 0, 524398, 1, 0, 524399, 1, 0, 524400, 1, 0, 524401, 2, 0, 524415, 4, 0, 524416, 6, 0, 589827, 8, 0, 589828, 9, 0, 589829, 10, 0, 589830, 11, 0, 589842, 3, 0, 589843, 12, 0, 589844, 3, 0, 589845, 12, 0, 589857, 4, 0, 589858, 6, 0, 589861, 4, 0, 589862, 6, 0, 589865, 4, 0, 589866, 6, 0, 589869, 4, 0, 589870, 6, 0, 589873, 4, 0, 589874, 6, 0, 589878, 3, 0, 589879, 7, 0, 589880, 7, 0, 589881, 7, 0, 589882, 7, 0, 589883, 7, 0, 589884, 7, 0, 589885, 7, 0, 589886, 7, 0, 589887, 7, 0, 589888, 7, 0, 589889, 7, 0, 589890, 7, 0, 589891, 7, 0, 589892, 7, 0, 589893, 12, 0, 589922, 3, 0, 589923, 7, 0, 589924, 7, 0, 589925, 7, 0, 589926, 7, 0, 589927, 7, 0, 589928, 7, 0, 589929, 7, 0, 589930, 7, 0, 589931, 7, 0, 589932, 7, 0, 589933, 7, 0, 589934, 7, 0, 589935, 7, 0, 589936, 7, 0, 589937, 12, 0, 655369, 0, 0, 655370, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 2, 0, 655384, 0, 0, 655385, 1, 0, 655386, 1, 0, 655387, 1, 0, 655388, 1, 0, 655389, 1, 0, 655390, 2, 0, 655414, 3, 0, 655415, 7, 0, 655416, 7, 0, 655417, 7, 0, 655418, 7, 0, 655419, 7, 0, 655420, 7, 0, 655421, 7, 0, 655422, 7, 0, 655423, 7, 0, 655424, 7, 0, 655425, 7, 0, 655426, 7, 0, 655427, 7, 0, 655428, 7, 0, 655429, 12, 0, 655458, 3, 0, 655459, 7, 0, 655460, 7, 0, 655461, 7, 0, 655462, 7, 0, 655463, 7, 0, 655464, 7, 0, 655465, 7, 0, 655466, 7, 0, 655467, 7, 0, 655468, 7, 0, 655469, 7, 0, 655470, 7, 0, 655471, 7, 0, 655472, 7, 0, 655473, 12, 0, 720905, 3, 0, 720906, 7, 0, 720907, 7, 0, 720908, 7, 0, 720909, 7, 0, 720910, 7, 0, 720911, 7, 0, 720912, 7, 0, 720913, 7, 0, 720914, 7, 0, 720915, 7, 0, 720916, 7, 0, 720917, 12, 0, 720920, 3, 0, 720921, 7, 0, 720922, 7, 0, 720923, 7, 0, 720924, 7, 0, 720925, 7, 0, 720926, 12, 0, 720950, 3, 0, 720951, 7, 0, 720952, 7, 0, 720953, 7, 0, 720954, 7, 0, 720955, 7, 0, 720956, 7, 0, 720957, 7, 0, 720958, 7, 0, 720959, 7, 0, 720960, 7, 0, 720961, 7, 0, 720962, 7, 0, 720963, 7, 0, 720964, 7, 0, 720965, 12, 0, 720994, 3, 0, 720995, 7, 0, 720996, 7, 0, 720997, 7, 0, 720998, 7, 0, 720999, 7, 0, 721000, 7, 0, 721001, 7, 0, 721002, 7, 0, 721003, 7, 0, 721004, 7, 0, 721005, 7, 0, 721006, 7, 0, 721007, 7, 0, 721008, 7, 0, 721009, 12, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="TileMap2" type="TileMap" parent="TileMaps" index="1"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 262204, 0, 0, 262205, 1, 0, 262206, 1, 0, 262207, 1, 0, 262208, 2, 0, 327740, 7, 0, 327741, 9, 0, 327742, 9, 0, 327743, 9, 0, 327744, 8, 0, 393276, 7, 0, 393277, 9, 0, 393278, 9, 0, 393279, 9, 0, 393280, 8, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="TileMap3" type="TileMap" parent="TileMaps" index="2"]
+
+mode = 0
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 655433, 0, 0, 655434, 1, 0, 655435, 1, 0, 655436, 1, 0, 655437, 1, 0, 655438, 1, 0, 655439, 1, 0, 655440, 1, 0, 655441, 1, 0, 655442, 1, 0, 655443, 1, 0, 655444, 1, 0, 655445, 1, 0, 655446, 1, 0, 655447, 1, 0, 655448, 1, 0, 655449, 1, 0, 655450, 1, 0, 655451, 1, 0, 655452, 1, 0, 655453, 2, 0, 720969, 7, 0, 720970, 8, 0, 720971, 8, 0, 720972, 8, 0, 720973, 8, 0, 720974, 8, 0, 720975, 8, 0, 720976, 8, 0, 720977, 8, 0, 720978, 8, 0, 720979, 8, 0, 720980, 8, 0, 720981, 8, 0, 720982, 8, 0, 720983, 8, 0, 720984, 8, 0, 720985, 8, 0, 720986, 8, 0, 720987, 8, 0, 720988, 8, 0, 720989, 3, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Player" parent="." index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 160, 192 )
+
+[node name="Player Scores" parent="." index="3" instance=ExtResource( 6 )]
+
+[node name="Coins" type="Node2D" parent="." index="4"]
+
+editor/display_folded = true
+
+[node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
+
+position = Vector2( 512, 288 )
+
+[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 7 )]
+
+position = Vector2( 448, 288 )
+
+[node name="Coin3" parent="Coins" index="2" instance=ExtResource( 7 )]
+
+position = Vector2( 608, 192 )
+
+[node name="Coin4" parent="Coins" index="3" instance=ExtResource( 7 )]
+
+position = Vector2( 672, 128 )
+
+[node name="Coin5" parent="Coins" index="4" instance=ExtResource( 7 )]
+
+position = Vector2( 800, 288 )
+
+[node name="Coin6" parent="Coins" index="5" instance=ExtResource( 7 )]
+
+position = Vector2( 960, 288 )
+
+[node name="Coin7" parent="Coins" index="6" instance=ExtResource( 7 )]
+
+position = Vector2( 1088, 224 )
+
+[node name="Coin8" parent="Coins" index="7" instance=ExtResource( 7 )]
+
+position = Vector2( 1152, 96 )
+
+[node name="Coin9" parent="Coins" index="8" instance=ExtResource( 7 )]
+
+position = Vector2( 1216, 224 )
+
+[node name="Coin10" parent="Coins" index="9" instance=ExtResource( 7 )]
+
+position = Vector2( 1280, 96 )
+
+[node name="Coin11" parent="Coins" index="10" instance=ExtResource( 7 )]
+
+position = Vector2( 1344, 224 )
+
+[node name="Coin12" parent="Coins" index="11" instance=ExtResource( 7 )]
+
+position = Vector2( 1408, 96 )
+
+[node name="Coin13" parent="Coins" index="12" instance=ExtResource( 7 )]
+
+position = Vector2( 1600, 224 )
+
+[node name="Coin14" parent="Coins" index="13" instance=ExtResource( 7 )]
+
+position = Vector2( 1536, 96 )
+
+[node name="Coin15" parent="Coins" index="14" instance=ExtResource( 7 )]
+
+position = Vector2( 1984, 96 )
+
+[node name="Coin16" parent="Coins" index="15" instance=ExtResource( 7 )]
+
+position = Vector2( 2016, 96 )
+
+[node name="Coin17" parent="Coins" index="16" instance=ExtResource( 7 )]
+
+position = Vector2( 2144, 192 )
+
+[node name="Coin18" parent="Coins" index="17" instance=ExtResource( 7 )]
+
+position = Vector2( 2624, 288 )
+
+[node name="Coin19" parent="Coins" index="18" instance=ExtResource( 7 )]
+
+position = Vector2( 2656, 288 )
+
+[node name="Coin20" parent="Coins" index="19" instance=ExtResource( 7 )]
+
+position = Vector2( 2688, 288 )
+
+[node name="Coin21" parent="Coins" index="20" instance=ExtResource( 7 )]
+
+position = Vector2( 3360, 224 )
+
+[node name="Coin22" parent="Coins" index="21" instance=ExtResource( 7 )]
+
+position = Vector2( 3424, 224 )
+
+[node name="Coin23" parent="Coins" index="22" instance=ExtResource( 7 )]
+
+position = Vector2( 3840, 128 )
+
+[node name="Coin24" parent="Coins" index="23" instance=ExtResource( 7 )]
+
+position = Vector2( 3872, 128 )
+
+[node name="Coin25" parent="Coins" index="24" instance=ExtResource( 7 )]
+
+position = Vector2( 3904, 128 )
+
+[node name="Enemies" type="Node2D" parent="." index="5"]
+
+[node name="EnemySaw" parent="Enemies" index="0" instance=ExtResource( 8 )]
+
+position = Vector2( 800, 107 )
+
+[node name="EnemySaw3" parent="Enemies" index="1" instance=ExtResource( 8 )]
+
+position = Vector2( 3392, 150 )
+
+[node name="EnemySaw2" parent="Enemies" index="2" instance=ExtResource( 8 )]
+
+position = Vector2( 1472.55, 262.524 )
+scale = Vector2( 0.7, 0.7 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="EnemySaw4" parent="Enemies" index="3" instance=ExtResource( 8 )]
+
+position = Vector2( 3816, 185 )
+scale = Vector2( 0.7, 0.7 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="EnemySaw5" parent="Enemies" index="4" instance=ExtResource( 8 )]
+
+position = Vector2( 3928, 185 )
+scale = Vector2( 0.7, 0.7 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="OrcMonsterMace" parent="Enemies" index="5" instance=ExtResource( 9 )]
+
+position = Vector2( 896, 288 )
+
+[node name="OrcMonsterMace2" parent="Enemies" index="6" instance=ExtResource( 9 )]
+
+position = Vector2( 2048, 192 )
+
+[node name="OrcMonsterMace3" parent="Enemies" index="7" instance=ExtResource( 9 )]
+
+position = Vector2( 3520, 224 )
+
+[node name="Enemy" parent="Enemies" index="8" instance=ExtResource( 10 )]
+
+position = Vector2( 1984, 96 )
+
+[node name="Check Points" type="Node2D" parent="." index="6"]
+
+editor/display_folded = true
+
+[node name="CheckPoint" parent="Check Points" index="0" instance=ExtResource( 11 )]
+
+position = Vector2( 896, 288 )
+
+[node name="CheckPoint2" parent="Check Points" index="1" instance=ExtResource( 11 )]
+
+position = Vector2( 1600, 233 )
+
+[node name="CheckPoint3" parent="Check Points" index="2" instance=ExtResource( 11 )]
+
+position = Vector2( 2944, 296 )
+
+[node name="CheckPoint4" parent="Check Points" index="3" instance=ExtResource( 11 )]
+
+position = Vector2( 3872, 138 )
+
+
