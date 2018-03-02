@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Player_Scores.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/2x/Coin.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/Idle0.png" type="Texture" id=3]
+
+
+[node name="Player Scores" type="CanvasLayer"]
+
+editor/display_folded = true
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Coins Score" type="Node2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 32, 32 )
+
+[node name="Sprite" type="Sprite" parent="Coins Score" index="0"]
+
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="Label" type="Label" parent="Coins Score" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 37.0
+margin_bottom = 23.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "0"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Material", "Theme", "Visibility" ]
+
+[node name="Player lives" type="Node2D" parent="." index="1"]
+
+position = Vector2( 75, 25 )
+
+[node name="Sprite" type="Sprite" parent="Player lives" index="0"]
+
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 10, 0, 40, 40 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Label" type="Label" parent="Player lives" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 19.0
+margin_top = 11.0
+margin_right = 59.0
+margin_bottom = 25.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
