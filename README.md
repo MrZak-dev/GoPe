@@ -1,8 +1,11 @@
 # GOPE 1.0 , GoDot 2D Game
-<<<<<<< HEAD
 
 **Still Working on it**
 
-=======
-**Still working on it**
->>>>>>> 0cf2cc4dba82413ba10ee37f94be53c44d156c89
+
+![Screenshot1](https://raw.githubusercontent.com/MrZak-dev/GoPe/master/Sprites/Games%20ScreenShots/Screenshot_20180302_153633.png)
+
+![Screenshot](https://raw.githubusercontent.com/MrZak-dev/GoPe/master/Sprites/Games%20ScreenShots/Screenshot_20180302_153709.png)
+
+![Screenshot](https://raw.githubusercontent.com/MrZak-dev/GoPe/master/Sprites/Games%20ScreenShots/Screenshot_20180302_153749.png)
+
