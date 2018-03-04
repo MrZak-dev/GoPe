@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scripts/coin.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/2x/image 1.png" type="Texture" id=2]
@@ -17,7 +17,7 @@
 [ext_resource path="res://Sprites/2x/image 14.png" type="Texture" id=15]
 [ext_resource path="res://Sprites/2x/image 15.png" type="Texture" id=16]
 [ext_resource path="res://Sprites/2x/image 16.png" type="Texture" id=17]
-
+[ext_resource path="res://Sounds/environment/coin_pick.wav" type="AudioStream" id=18]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -41,12 +41,14 @@ extents = Vector2( 10, 10 )
 [node name="Coin" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="coin_area" type="Area2D" parent="." index="0"]
 
+editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -61,12 +63,20 @@ position = Vector2( 4.76837e-07, -3.57628e-07 )
 scale = Vector2( 0.15625, 0.15625 )
 frames = SubResource( 1 )
 animation = "Turnning"
-frame = 7
+frame = 13
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coin_area" index="1"]
 
 visible = false
 shape = SubResource( 2 )
+
+[node name="coin_pick" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = ExtResource( 18 )
+volume_db = -20.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 

@@ -1,10 +1,9 @@
 extends Node
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+
 
 var coins_picked 
+var player_health
 var player_lives
 var check_point = Vector2(150,150)
 
@@ -12,6 +11,7 @@ var jump = false
 var right_button = false
 var left_button = false
 func _ready():
+	player_health = 100
 	coins_picked = 0
 	player_lives = 5
 	pass

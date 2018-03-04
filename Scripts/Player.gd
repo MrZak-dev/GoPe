@@ -25,6 +25,7 @@ func _physics_process(delta):
 		friction = true
 	if is_on_floor():
 		if Input.is_action_pressed("ui_up") or global.jump:
+			$jump_sound.play()
 			motion.y = -JUMP_SPEED
 		if friction == true:
 			motion.x = lerp(motion.x, 0 ,0.2)

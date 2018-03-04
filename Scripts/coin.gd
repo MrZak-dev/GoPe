@@ -10,8 +10,8 @@ func _ready():
 	pass
 	
 func picked(body):
-	queue_free()
+	$coin_pick.play() #Not working -> the queue_free function run before this
 	global.coins_picked += 1
-	
+	queue_free()
 	
 	pass

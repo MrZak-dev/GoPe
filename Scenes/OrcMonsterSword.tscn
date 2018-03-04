@@ -28,13 +28,14 @@ extents = Vector2( 45, 35 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="OrcMonsterMace" type="KinematicBody2D" index="0"]
+[node name="OrcMonsterMace" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -54,7 +55,7 @@ audio_bus_name = "Master"
 scale = Vector2( 0.06, 0.06 )
 frames = SubResource( 1 )
 animation = "walk"
-frame = 4
+frame = 2
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 

@@ -14,7 +14,7 @@
 [ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Player Controls.tscn" type="PackedScene" id=13]
 
-[node name="World2" type="Node" index="0"]
+[node name="World2" type="Node"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
@@ -204,8 +204,6 @@ position = Vector2( 3872, 128 )
 position = Vector2( 3904, 128 )
 
 [node name="Enemies" type="Node2D" parent="." index="5"]
-
-editor/display_folded = true
 
 [node name="EnemySaw" parent="Enemies" index="0" instance=ExtResource( 8 )]
 

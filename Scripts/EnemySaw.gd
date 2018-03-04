@@ -15,6 +15,9 @@ func _physics_process(delta):
 
 func player_touched(body):
 	if body.name == "Player":
-		body.position = global.check_point
-		global.player_lives -= 1
+		global.player_health -= 17
+		if global.player_health <= 0:
+			body.position = global.check_point
+			global.player_lives -= 1
+			global.player_health = 100
 	pass
