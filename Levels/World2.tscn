@@ -14,7 +14,7 @@
 [ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Player Controls.tscn" type="PackedScene" id=13]
 
-[node name="World2" type="Node"]
+[node name="World2" type="Node" index="0"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
@@ -205,6 +205,8 @@ position = Vector2( 3904, 128 )
 
 [node name="Enemies" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
+
 [node name="EnemySaw" parent="Enemies" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( 800, 107 )
@@ -233,7 +235,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="OrcMonsterMace" parent="Enemies" index="5" instance=ExtResource( 9 )]
 
-position = Vector2( 896, 288 )
+position = Vector2( 961.836, 286.049 )
 
 [node name="OrcMonsterMace2" parent="Enemies" index="6" instance=ExtResource( 9 )]
 
@@ -249,11 +251,9 @@ position = Vector2( 3488, 224 )
 
 [node name="Check Points" type="Node2D" parent="." index="6"]
 
-editor/display_folded = true
-
 [node name="CheckPoint" parent="Check Points" index="0" instance=ExtResource( 12 )]
 
-position = Vector2( 896, 288 )
+position = Vector2( 898.44, 297.415 )
 
 [node name="CheckPoint2" parent="Check Points" index="1" instance=ExtResource( 12 )]
 

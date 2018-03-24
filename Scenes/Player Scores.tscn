@@ -174,7 +174,7 @@ page = 0.0
 value = 100.0
 exp_edit = false
 rounded = false
-percent_visible = true
-_sections_unfolded = [ "custom_styles" ]
+percent_visible = false
+_sections_unfolded = [ "Percent", "custom_styles" ]
 
 

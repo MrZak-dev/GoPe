@@ -13,5 +13,4 @@ func picked(body):
 	$coin_pick.play() #Not working -> the queue_free function run before this
 	global.coins_picked += 1
 	queue_free()
-	
 	pass

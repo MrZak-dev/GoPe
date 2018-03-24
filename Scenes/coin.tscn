@@ -48,7 +48,6 @@ __meta__ = {
 
 [node name="coin_area" type="Area2D" parent="." index="0"]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -63,7 +62,7 @@ position = Vector2( 4.76837e-07, -3.57628e-07 )
 scale = Vector2( 0.15625, 0.15625 )
 frames = SubResource( 1 )
 animation = "Turnning"
-frame = 13
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coin_area" index="1"]

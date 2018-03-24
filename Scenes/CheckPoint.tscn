@@ -1,23 +1,20 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/CheckPoint.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/CheckPoint/greenflag.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/CheckPoint/redflag.png" type="Texture" id=3]
-
-
-
+[ext_resource path="res://Sprites/CheckPoint/redflag.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/CheckPoint/greenflag.png" type="Texture" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": false,
-"name": "green",
+"name": "red",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": false,
-"name": "red",
+"name": "green",
 "speed": 5.0
 } ]
 
@@ -26,7 +23,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 22, 24 )
 
-[node name="CheckPoint" type="Area2D" index="0"]
+[node name="CheckPoint" type="Area2D"]
 
 z_index = -1
 input_pickable = false

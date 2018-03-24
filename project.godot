@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="GoPe"
-run/main_scene="res://Levels/World.tscn"
+run/main_scene="res://GUI/start_Gui.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -23,6 +23,8 @@ global="*res://global_variables.gd"
 window/size/width=640
 window/size/height=380
 window/size/resizable=false
+window/size/test_width=1280
+window/size/test_height=720
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 

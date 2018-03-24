@@ -3,7 +3,6 @@
 [ext_resource path="res://Scripts/EnemySaw.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/enemies/Saw.png" type="Texture" id=2]
 
-
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
@@ -14,7 +13,7 @@ radius = 32.0
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="EnemySaw" type="KinematicBody2D" index="0"]
+[node name="EnemySaw" type="KinematicBody2D"]
 
 scale = Vector2( 1.25, 1.25 )
 z_index = -1

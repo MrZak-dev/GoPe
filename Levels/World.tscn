@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Sprites/Backgrounds/world1_bg.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Scenes/Player Controls.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sounds/Background Music/world1.wav" type="AudioStream" id=15]
+[ext_resource path="res://Scripts/bg_music1.gd" type="Script" id=16]
 
 [node name="World" type="Node"]
 
@@ -105,6 +106,7 @@ _sections_unfolded = [ "Cell" ]
 
 [node name="Coins" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
 position = Vector2( 0, -254 )
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
@@ -192,12 +194,13 @@ position = Vector2( 2080, 109 )
 
 position = Vector2( 4019.88, 328.59 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="9"]
+[node name="bg_music1" type="AudioStreamPlayer" parent="." index="9"]
 
 stream = ExtResource( 15 )
 volume_db = -15.0
 autoplay = true
 mix_target = 0
 bus = "Master"
+script = ExtResource( 16 )
 
 
