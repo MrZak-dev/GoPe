@@ -15,7 +15,7 @@ func _physics_process(delta):
 	pass
 	
 func on_play_btn_released():
-	get_tree().change_scene("Levels/World.tscn")
+	get_tree().change_scene("Levels/World1.tscn")
 	pass
 	
 func on_sound_btn_released():
