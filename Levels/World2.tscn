@@ -14,7 +14,7 @@
 [ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=12]
 [ext_resource path="res://GUI/player_controls.tscn" type="PackedScene" id=13]
 
-[node name="World2" type="Node" index="0"]
+[node name="World2" type="Node"]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
@@ -100,8 +100,6 @@ position = Vector2( 160, 192 )
 [node name="Player Scores" parent="." index="3" instance=ExtResource( 6 )]
 
 [node name="Coins" type="Node2D" parent="." index="4"]
-
-editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
@@ -250,6 +248,8 @@ position = Vector2( 1984, 96 )
 position = Vector2( 3488, 224 )
 
 [node name="Check Points" type="Node2D" parent="." index="6"]
+
+editor/display_folded = true
 
 [node name="CheckPoint" parent="Check Points" index="0" instance=ExtResource( 12 )]
 

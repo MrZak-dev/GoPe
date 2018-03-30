@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://GUI/pause_scene.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Gui/Buttons/96x96 normal/play_normal.png" type="Texture" id=2]
@@ -7,6 +7,18 @@
 [ext_resource path="res://Sprites/Gui/Buttons/96x96 pressed/reload_pressed.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Gui/Buttons/96x96 normal/home_normal.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Gui/Buttons/96x96 pressed/home_pressed.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Gui/Buttons/normal/music_normal.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Gui/Buttons/normal/sound_normal.png" type="Texture" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
 
 [node name="pause_scene" type="CanvasLayer"]
 
@@ -71,5 +83,53 @@ shape_visible = true
 passby_press = false
 action = ""
 visibility_mode = 0
+
+[node name="buttons" type="Node2D" parent="." index="4"]
+
+position = Vector2( 544, 0 )
+
+[node name="m_btn" type="Sprite" parent="buttons" index="0"]
+
+editor/display_folded = true
+position = Vector2( 25.7824, 22.8922 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 8 )
+
+[node name="music_btn" type="TouchScreenButton" parent="buttons/m_btn" index="0"]
+
+position = Vector2( -1.35088, -1.46782 )
+scale = Vector2( 2.31419, 2.40623 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="s_btn" type="Sprite" parent="buttons" index="1"]
+
+editor/display_folded = true
+position = Vector2( 71.2022, 23.1358 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 9 )
+
+[node name="sound_btn" type="TouchScreenButton" parent="buttons/s_btn" index="0"]
+
+position = Vector2( -2.08047, -1.50258 )
+scale = Vector2( 2.36405, 2.39524 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 2 )
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
 
 

@@ -55,7 +55,7 @@ audio_bus_name = "Master"
 scale = Vector2( 0.06, 0.06 )
 frames = SubResource( 1 )
 animation = "walk"
-frame = 1
+frame = 6
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 

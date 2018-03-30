@@ -38,7 +38,7 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Coin" type="Node2D" index="0"]
+[node name="Coin" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "Visibility" ]
@@ -62,7 +62,7 @@ position = Vector2( 4.76837e-07, -3.57628e-07 )
 scale = Vector2( 0.15625, 0.15625 )
 frames = SubResource( 1 )
 animation = "Turnning"
-frame = 4
+frame = 8
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coin_area" index="1"]
@@ -73,7 +73,7 @@ shape = SubResource( 2 )
 [node name="coin_pick" type="AudioStreamPlayer" parent="." index="1"]
 
 stream = ExtResource( 18 )
-volume_db = -20.0
+volume_db = -35.0
 autoplay = false
 mix_target = 0
 bus = "Master"

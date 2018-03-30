@@ -15,7 +15,8 @@ func _physics_process(delta):
 		direction.x = 1
 		$Area2D/AnimatedSprite.set_flip_h(false)
 	mouvements.x = WALK_SPEED*direction.x
-	move_and_slide(mouvements)
+	if !global.is_pause:
+		move_and_slide(mouvements)
 	pass
 
 func player_touched(body):

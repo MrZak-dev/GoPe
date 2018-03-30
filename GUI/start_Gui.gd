@@ -1,8 +1,5 @@
 extends Node
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
 
 func _ready():
 	$buttons/play_btn.connect("released",self,"on_play_btn_released")
@@ -10,10 +7,6 @@ func _ready():
 	$buttons/m_btn/music_btn.connect("released",self,"on_music_btn_released")
 	pass
 
-func _physics_process(delta):
-	
-	pass
-	
 func on_play_btn_released():
 	get_tree().change_scene("Levels/World1.tscn")
 	pass

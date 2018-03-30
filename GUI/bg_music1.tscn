@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sounds/Background Music/world1.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/bg_music1.gd" type="Script" id=2]
+
+[node name="bg_music1" type="AudioStreamPlayer"]
+
+stream = ExtResource( 1 )
+volume_db = -15.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+script = ExtResource( 2 )
+
+

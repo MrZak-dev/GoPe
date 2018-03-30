@@ -15,7 +15,8 @@ func _physics_process(delta):
 	if !$enemyArea/left.is_colliding():
 		direction.x = 1 
 	mouvement.x = SPEED*direction.x
-	move_and_slide(mouvement)
+	if !global.is_pause:
+		move_and_slide(mouvement)
 	pass
 	
 func player_touched(body):

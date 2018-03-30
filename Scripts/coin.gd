@@ -10,7 +10,9 @@ func _ready():
 	pass
 	
 func picked(body):
-	$coin_pick.play() #Not working -> the queue_free function run before this
+	if global.sound:
+		$coin_pick.play() #Not working -> the queue_free function run before this
 	global.coins_picked += 1
-	queue_free()
+	var coin_area = get_child(0) #get the coin area
+	self.remove_child(coin_area) #remove coin_area # ther is an error here fix it later
 	pass
