@@ -41,11 +41,13 @@ func replay_btn_released():
 	global.player_health = 100
 	global.player_lives = 5
 	global.coins_picked = 0
+	global.check_point = Vector2(150,150)
 	pass
 func home_btn_released():
 	self.queue_free()
 	get_tree().change_scene("res://GUI/start_Gui.tscn")
 	global.is_pause = false
+	global.check_point = Vector2(150,150)
 	pass
 	
 func on_sound_btn_released():

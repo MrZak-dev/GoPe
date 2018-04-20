@@ -191,4 +191,5 @@ extents = Vector2( 16, 16 )
 "shape": SubResource( 1 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 16, 16 )
 } ]
+_sections_unfolded = [ "6" ]
 

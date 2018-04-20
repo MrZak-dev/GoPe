@@ -1,29 +1,30 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Sprites/Backgrounds/world1_bg.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Tiles/DesertDirtTiles.tres" type="TileSet" id=3]
 [ext_resource path="res://Tiles/TailesWithGras.tres" type="TileSet" id=4]
 [ext_resource path="res://Tiles/UnderEmptyTiles.tres" type="TileSet" id=5]
-[ext_resource path="res://Scenes/coin.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/EnemySaw.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/OrcMonsterMace.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/OrcMonsterSoldier.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Player Scores.tscn" type="PackedScene" id=12]
-[ext_resource path="res://GUI/player_controls.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=14]
-[ext_resource path="res://GUI/bg_music1.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Tiles/JungleDecorations.tres" type="TileSet" id=6]
+[ext_resource path="res://Scenes/coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/EnemySaw.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/OrcMonsterMace.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/OrcMonsterSoldier.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/CheckPoint.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Player Scores.tscn" type="PackedScene" id=13]
+[ext_resource path="res://GUI/player_controls.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=15]
+[ext_resource path="res://GUI/bg_music1.tscn" type="PackedScene" id=16]
 
-[node name="World" type="Node"]
+[node name="World" type="Node" index="0"]
 
 _sections_unfolded = [ "Pause" ]
 
 [node name="BAckground" type="Sprite" parent="." index="0"]
 
 scale = Vector2( 1, 0.385185 )
-z_index = -5
+z_index = -4096
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
@@ -35,8 +36,6 @@ _sections_unfolded = [ "Region", "Z Index" ]
 position = Vector2( 132.355, 147.259 )
 
 [node name="Tiles" type="Node" parent="." index="2"]
-
-editor/display_folded = true
 
 [node name="TileMap" type="TileMap" parent="Tiles" index="0"]
 
@@ -103,48 +102,69 @@ format = 1
 tile_data = PoolIntArray( 917511, 0, 0, 917512, 1, 0, 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917516, 1, 0, 917517, 1, 0, 917518, 2, 0, 983047, 7, 0, 983048, 9, 0, 983049, 9, 0, 983050, 9, 0, 983051, 9, 0, 983052, 9, 0, 983053, 9, 0, 983054, 8, 0, 1048583, 7, 0, 1048584, 9, 0, 1048585, 9, 0, 1048586, 9, 0, 1048587, 9, 0, 1048588, 9, 0, 1048589, 9, 0, 1048590, 8, 0, 1114119, 7, 0, 1114120, 9, 0, 1114121, 9, 0, 1114122, 9, 0, 1114123, 9, 0, 1114124, 9, 0, 1114125, 9, 0, 1114126, 8, 0 )
 _sections_unfolded = [ "Cell" ]
 
+[node name="Decorations" type="TileMap" parent="Tiles" index="3"]
+
+mode = 0
+tile_set = ExtResource( 6 )
+cell_size = Vector2( 3, 3 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 1572921, 27, 0, 2294037, 27, 0, 2621506, 13, 0, 3145800, 14, 0, 3408189, 48, 0, 4063508, 33, 0, 4063510, 32, 0, 4063514, 32, 0, 4063515, 32, 0, 4325702, 41, 0, 4391235, 42, 0, 4456459, 35, 0, 5506084, 6, 0, 5506106, 4, 0, 5570793, 49, 0, 5571423, 49, 0, 5571607, 7, 0, 5571633, 5, 0, 5702064, 47, 0, 5898440, 43, 0, 5898678, 43, 0, 5964005, 8, 0, 5964719, 8, 0, 6160593, 30, 0, 6161323, 29, 0, 6291456, 36, 0, 6357060, 28, 0, 6357857, 39, 0, 6357865, 40, 0 )
+_sections_unfolded = [ "Cell" ]
+
 [node name="Coins" type="Node2D" parent="." index="3"]
 
 editor/display_folded = true
 position = Vector2( 0, -254 )
 
-[node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
+[node name="Coin" parent="Coins" index="0" instance=ExtResource( 7 )]
 
 position = Vector2( 896, 448 )
 
-[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 6 )]
+[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 7 )]
 
 position = Vector2( 928, 448 )
 
-[node name="Coin4" parent="Coins" index="2" instance=ExtResource( 6 )]
+[node name="Coin4" parent="Coins" index="2" instance=ExtResource( 7 )]
 
 position = Vector2( 960, 448 )
 
-[node name="Coin9" parent="Coins" index="3" instance=ExtResource( 6 )]
+[node name="Coin9" parent="Coins" index="3" instance=ExtResource( 7 )]
 
 position = Vector2( 1184, 544 )
 
-[node name="Coin10" parent="Coins" index="4" instance=ExtResource( 6 )]
+[node name="Coin10" parent="Coins" index="4" instance=ExtResource( 7 )]
 
 position = Vector2( 1216, 544 )
 
-[node name="Coin3" parent="Coins" index="5" instance=ExtResource( 6 )]
+[node name="Coin3" parent="Coins" index="5" instance=ExtResource( 7 )]
 
 position = Vector2( 864, 448 )
 
-[node name="Coin5" parent="Coins" index="6" instance=ExtResource( 6 )]
+[node name="Coin5" parent="Coins" index="6" instance=ExtResource( 7 )]
 
 position = Vector2( 1824, 416 )
 
-[node name="Coin6" parent="Coins" index="7" instance=ExtResource( 6 )]
+[node name="Coin6" parent="Coins" index="7" instance=ExtResource( 7 )]
 
 position = Vector2( 2048, 354 )
 
-[node name="Coin7" parent="Coins" index="8" instance=ExtResource( 6 )]
+[node name="Coin7" parent="Coins" index="8" instance=ExtResource( 7 )]
 
 position = Vector2( 2111, 354 )
 
-[node name="Coin8" parent="Coins" index="9" instance=ExtResource( 6 )]
+[node name="Coin8" parent="Coins" index="9" instance=ExtResource( 7 )]
 
 position = Vector2( 2336, 416 )
 
@@ -153,23 +173,23 @@ position = Vector2( 2336, 416 )
 editor/display_folded = true
 position = Vector2( 0, -261 )
 
-[node name="Enemy" parent="Enemies" index="0" instance=ExtResource( 7 )]
+[node name="Enemy" parent="Enemies" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( 1920, 416 )
 
-[node name="Enemy2" parent="Enemies" index="1" instance=ExtResource( 7 )]
+[node name="Enemy2" parent="Enemies" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( 2208, 416 )
 
-[node name="EnemySaw" parent="Enemies" index="2" instance=ExtResource( 8 )]
+[node name="EnemySaw" parent="Enemies" index="2" instance=ExtResource( 9 )]
 
 position = Vector2( 1133, 587 )
 
-[node name="OrcMonsterMace" parent="Enemies" index="3" instance=ExtResource( 9 )]
+[node name="OrcMonsterMace" parent="Enemies" index="3" instance=ExtResource( 10 )]
 
 position = Vector2( 421.251, 539.148 )
 
-[node name="OrcMonsterMace2" parent="Enemies" index="4" instance=ExtResource( 10 )]
+[node name="OrcMonsterMace2" parent="Enemies" index="4" instance=ExtResource( 11 )]
 
 position = Vector2( 2764.32, 539.006 )
 
@@ -177,22 +197,22 @@ position = Vector2( 2764.32, 539.006 )
 
 editor/display_folded = true
 
-[node name="CheckPoint" parent="CheckPoints" index="0" instance=ExtResource( 11 )]
+[node name="CheckPoint" parent="CheckPoints" index="0" instance=ExtResource( 12 )]
 
 position = Vector2( 675, 290 )
 
-[node name="CheckPoint2" parent="CheckPoints" index="1" instance=ExtResource( 11 )]
+[node name="CheckPoint2" parent="CheckPoints" index="1" instance=ExtResource( 12 )]
 
 position = Vector2( 2080, 109 )
 
-[node name="Player Scores" parent="." index="6" instance=ExtResource( 12 )]
+[node name="Player Scores" parent="." index="6" instance=ExtResource( 13 )]
 
-[node name="Player Controls" parent="." index="7" instance=ExtResource( 13 )]
+[node name="Player Controls" parent="." index="7" instance=ExtResource( 14 )]
 
-[node name="Chest" parent="." index="8" instance=ExtResource( 14 )]
+[node name="Chest" parent="." index="8" instance=ExtResource( 15 )]
 
 position = Vector2( 4019.88, 328.59 )
 
-[node name="bg_music1" parent="." index="9" instance=ExtResource( 15 )]
+[node name="bg_music1" parent="." index="9" instance=ExtResource( 16 )]
 
 

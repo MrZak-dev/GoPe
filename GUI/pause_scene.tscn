@@ -20,7 +20,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="pause_scene" type="CanvasLayer"]
+[node name="pause_scene" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )

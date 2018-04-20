@@ -22,6 +22,8 @@ global="*res://global_variables.gd"
 
 window/size/width=640
 window/size/height=380
+window/size/test_width=1280
+window/size/test_height=720
 window/handheld/orientation="sensor_landscape"
 window/handheld/emulate_touchscreen=true
 window/stretch/mode="viewport"
