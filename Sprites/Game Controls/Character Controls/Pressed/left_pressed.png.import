@@ -7,10 +7,7 @@ path="res://.import/left_pressed.png-cafa9d9d309db8d890921d1c2ed8a873.stex"
 [deps]
 
 source_file="res://Sprites/Game Controls/Character Controls/Pressed/left_pressed.png"
-source_md5="bcb098e4172619fe11e2b16b3d2e9edb"
-
 dest_files=[ "res://.import/left_pressed.png-cafa9d9d309db8d890921d1c2ed8a873.stex" ]
-dest_md5="f065dc9bcbb1e848a6045242c60850c2"
 
 [params]
 

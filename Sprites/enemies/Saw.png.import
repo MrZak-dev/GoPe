@@ -7,10 +7,7 @@ path="res://.import/Saw.png-81d61cdb9fb161144a36a80daff080b2.stex"
 [deps]
 
 source_file="res://Sprites/enemies/Saw.png"
-source_md5="c056edc7d52e5bd1db1067931853f286"
-
 dest_files=[ "res://.import/Saw.png-81d61cdb9fb161144a36a80daff080b2.stex" ]
-dest_md5="b5f108ea5a7b575e553164a4a22de9ae"
 
 [params]
 

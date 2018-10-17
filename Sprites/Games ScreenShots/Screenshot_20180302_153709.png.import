@@ -7,10 +7,7 @@ path="res://.import/Screenshot_20180302_153709.png-6a0627e83d564600d1865d753ff2e
 [deps]
 
 source_file="res://Sprites/Games ScreenShots/Screenshot_20180302_153709.png"
-source_md5="7dbe39ce4fe82628622b590f1e654790"
-
 dest_files=[ "res://.import/Screenshot_20180302_153709.png-6a0627e83d564600d1865d753ff2e296.stex" ]
-dest_md5="bfba07888ca9fa8873027ec038f150fa"
 
 [params]
 

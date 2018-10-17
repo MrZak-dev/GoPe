@@ -7,10 +7,7 @@ path="res://.import/greenflag.png-c95f45eff3a8530b628675dee30b6a15.stex"
 [deps]
 
 source_file="res://Sprites/CheckPoint/greenflag.png"
-source_md5="270946654f653ed58586dbab49016235"
-
 dest_files=[ "res://.import/greenflag.png-c95f45eff3a8530b628675dee30b6a15.stex" ]
-dest_md5="3bf9af80db0840d363e7f050cbd5a171"
 
 [params]
 

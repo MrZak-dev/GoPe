@@ -7,10 +7,7 @@ path="res://.import/right_normal.png-dc228a6ad9af6d77bcd56f0bd329f18f.stex"
 [deps]
 
 source_file="res://Sprites/Game Controls/Character Controls/Normal/right_normal.png"
-source_md5="576fdb12457fcd84b8d69014f3b49220"
-
 dest_files=[ "res://.import/right_normal.png-dc228a6ad9af6d77bcd56f0bd329f18f.stex" ]
-dest_md5="ef80d2c6225885b7b5ef863b9ba6df72"
 
 [params]
 

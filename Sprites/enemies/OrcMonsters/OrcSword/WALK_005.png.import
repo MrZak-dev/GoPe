@@ -7,10 +7,7 @@ path="res://.import/WALK_005.png-557cee71e76bf01aae92dd55bcc1fc38.stex"
 [deps]
 
 source_file="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_005.png"
-source_md5="062983985cf6a31cf3378f3a1fa9a4ad"
-
 dest_files=[ "res://.import/WALK_005.png-557cee71e76bf01aae92dd55bcc1fc38.stex" ]
-dest_md5="d12b4fae6423ca83577d9972aa4b9d3b"
 
 [params]
 

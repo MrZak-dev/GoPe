@@ -7,10 +7,7 @@ path="res://.import/ATTAK_004.png-959b57dc3f279071bd612929d17189b2.stex"
 [deps]
 
 source_file="res://Sprites/enemies/OrcMonsters/SwordOrc/ATTAK/ATTAK_004.png"
-source_md5="b8b74f38b238b8c4065b14de85c28ce8"
-
 dest_files=[ "res://.import/ATTAK_004.png-959b57dc3f279071bd612929d17189b2.stex" ]
-dest_md5="5de9e432e7036fe9b5306f2db9f6e029"
 
 [params]
 

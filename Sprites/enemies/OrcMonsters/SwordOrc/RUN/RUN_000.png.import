@@ -7,10 +7,7 @@ path="res://.import/RUN_000.png-e86715b680d6d55de9eae2de1264ff1e.stex"
 [deps]
 
 source_file="res://Sprites/enemies/OrcMonsters/SwordOrc/RUN/RUN_000.png"
-source_md5="4cb1a4145ad5f3057b9660c3880fd5c4"
-
 dest_files=[ "res://.import/RUN_000.png-e86715b680d6d55de9eae2de1264ff1e.stex" ]
-dest_md5="8d4493385e5347b5a512d410f07d09ad"
 
 [params]
 

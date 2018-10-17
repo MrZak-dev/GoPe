@@ -7,10 +7,7 @@ path="res://.import/world1_bg.png-89b4ffcc2653e25d7d69072a87ec1012.stex"
 [deps]
 
 source_file="res://Sprites/Backgrounds/world1_bg.png"
-source_md5="bf7ad7bae367686970b82fe500e80632"
-
 dest_files=[ "res://.import/world1_bg.png-89b4ffcc2653e25d7d69072a87ec1012.stex" ]
-dest_md5="598fb8c67893a5f539c69cbd3d100438"
 
 [params]
 

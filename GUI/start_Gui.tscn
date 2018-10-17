@@ -74,7 +74,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Gui" type="Node"]
+[node name="Gui" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -166,6 +166,7 @@ shape = SubResource( 2 )
 
 stream = ExtResource( 15 )
 volume_db = -30.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"

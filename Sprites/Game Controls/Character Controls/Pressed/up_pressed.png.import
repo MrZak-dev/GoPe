@@ -7,10 +7,7 @@ path="res://.import/up_pressed.png-4910c913b6178b9511e021ae51b8dc22.stex"
 [deps]
 
 source_file="res://Sprites/Game Controls/Character Controls/Pressed/up_pressed.png"
-source_md5="c9fc29747b81b09943c8ea8848ae0f16"
-
 dest_files=[ "res://.import/up_pressed.png-4910c913b6178b9511e021ae51b8dc22.stex" ]
-dest_md5="78bc0a127e7df56e6aa7ae1f8d30691c"
 
 [params]
 
