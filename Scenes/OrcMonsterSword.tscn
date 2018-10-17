@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/OrcMonsterSword.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_000.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_001.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_002.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_003.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_004.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_005.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/enemies/OrcMonsters/OrcSword/WALK_006.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 45, 35 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="OrcMonsterMace" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area2D" type="Area2D" parent="." index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D" index="0"]
+
+scale = Vector2( 0.06, 0.06 )
+frames = SubResource( 1 )
+animation = "walk"
+frame = 6
+playing = true
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="1"]
+
+shape = SubResource( 2 )
+
+[node name="right_limit" type="RayCast2D" parent="Area2D" index="2"]
+
+position = Vector2( 5, 32 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+
+[node name="left_limit" type="RayCast2D" parent="Area2D" index="3"]
+
+position = Vector2( -21, 30 )
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 50 )
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+visible = false
+shape = SubResource( 3 )
+disabled = true
+
+
