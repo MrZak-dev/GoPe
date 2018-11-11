@@ -4,16 +4,16 @@
 [ext_resource path="res://Sprites/Backgrounds/world1_bg.png" type="Texture" id=2]
 [ext_resource path="res://Tiles/TailesWithGras.tres" type="TileSet" id=3]
 [ext_resource path="res://Sprites/Player/Idle0.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Player/Jump3.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/Jump4.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Player/Jump0.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/Jump1.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Player/Run0.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Player/Run1.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Player/Run2.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Player/Run3.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/Run4.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Player/Run7.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Player/Jump0.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Player/Jump1.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Player/Jump3.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Player/Jump4.png" type="Texture" id=14]
 [ext_resource path="res://Sounds/Player sounds/jump.wav" type="AudioStream" id=15]
 [ext_resource path="res://Scenes/coin.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=17]
@@ -39,23 +39,23 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
-"name": "fall",
-"speed": 5.0
+"name": "jump",
+"speed": 2.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "run",
 "speed": 10.0
 }, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": false,
 "name": "fire",
 "speed": 1.0
-}, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "jump",
-"speed": 2.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -237,8 +237,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="level_btn" type="TouchScreenButton" parent="buttons" index="1"]
 
-position = Vector2( 278.226, 288.815 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 290.226, 262.815 )
+scale = Vector2( 0.6, 0.6 )
 normal = ExtResource( 21 )
 pressed = ExtResource( 22 )
 bitmask = null
@@ -252,8 +252,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="achievement_btn" type="TouchScreenButton" parent="buttons" index="2"]
 
-position = Vector2( 160, 288 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 172, 262 )
+scale = Vector2( 0.6, 0.6 )
 normal = ExtResource( 23 )
 pressed = ExtResource( 24 )
 bitmask = null
@@ -267,8 +267,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="settings_btn" type="TouchScreenButton" parent="buttons" index="3"]
 
-position = Vector2( 392.96, 288 )
-scale = Vector2( 0.9, 0.9 )
+position = Vector2( 404.96, 262 )
+scale = Vector2( 0.6, 0.6 )
 normal = ExtResource( 25 )
 pressed = ExtResource( 26 )
 bitmask = null
@@ -323,5 +323,11 @@ passby_press = false
 action = ""
 visibility_mode = 0
 _sections_unfolded = [ "Transform" ]
+
+[connection signal="released" from="buttons/play_btn" to="." method="_on_play_btn_released"]
+
+[connection signal="pressed" from="buttons/settings_btn" to="." method="_on_settings_btn_pressed"]
+
+[connection signal="released" from="buttons/settings_btn" to="." method="_on_settings_btn_released"]
 
 
