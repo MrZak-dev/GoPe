@@ -8,6 +8,10 @@
 
 config_version=3
 
+[android]
+
+modules="org/godotengine/godot/GodotAdMob"
+
 [application]
 
 config/name="GoPe"
@@ -22,9 +26,11 @@ global="*res://global_variables.gd"
 
 window/size/width=640
 window/size/height=380
+window/size/borderless=true
+window/size/fullscreen=true
 window/size/test_width=1280
 window/size/test_height=720
-window/handheld/orientation="sensor_landscape"
+window/handheld/orientation="sensor"
 window/handheld/emulate_touchscreen=true
 window/stretch/mode="2d"
 

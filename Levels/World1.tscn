@@ -17,7 +17,7 @@
 [ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=15]
 [ext_resource path="res://GUI/bg_music1.tscn" type="PackedScene" id=16]
 
-[node name="World" type="Node" index="0"]
+[node name="World" type="Node"]
 
 _sections_unfolded = [ "Pause" ]
 
@@ -36,6 +36,8 @@ _sections_unfolded = [ "Region", "Z Index" ]
 position = Vector2( 132.355, 147.259 )
 
 [node name="Tiles" type="Node" parent="." index="2"]
+
+editor/display_folded = true
 
 [node name="TileMap" type="TileMap" parent="Tiles" index="0"]
 
@@ -214,5 +216,7 @@ position = Vector2( 2080, 109 )
 position = Vector2( 4019.88, 328.59 )
 
 [node name="bg_music1" parent="." index="9" instance=ExtResource( 16 )]
+
+pitch_scale = 1.0
 
 
